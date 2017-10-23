@@ -1,0 +1,113 @@
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+#flex-panels {
+  display: flex;
+  margin: 0;
+  color: #fff;
+  font-size: 60px;
+  font-family: 'Amatic SC', cursive;
+}
+
+#presentation-box, #skills-box, #projects-box, #search-box, #contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  border: 1px solid white;
+}
+
+#presentation-box {
+  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(164, 172, 171, 0.6) 0), url(images/nature_1.jpg);
+  background-size: cover;
+}
+
+#skills-box {
+  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(227, 0, 48, 0.60) 0), url(images/nature_2.jpg);
+  background-size: cover;
+}
+
+#projects-box {
+  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(155, 242, 12, 0.60) 0), url(images/nature_3.jpg);
+  background-size: cover;
+}
+
+#search-box {
+  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(215, 12, 213, 0.60) 0), url(images/nature_4.jpg);
+  background-size: cover;
+}
+
+#contact-box {
+  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(163, 251, 93, 0.6) 0), url(images/nature_5.jpg);
+  background-size: cover;
+}
+
+
+/*footer*/
+
+footer h1 {
+  font-family: 'Amatic SC', cursive;
+  font-style: italic;
+  color: black;
+  font-size: 45px;
+}
+
+footer {
+  padding: 40px;
+  background-color: rgba(249, 247, 240, 0.40);
+  background-color: white;
+  font-size: 25px;
+}
+
+footer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.fa-linkedin:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+  transition: 2s;
+}
+
+.fa-twitter:hover {
+  transform: rotateX(360deg);
+  transition: 2s;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+  transition: 2s;
+}
+
+.fa-github:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+.fa-github {
+  color: #333;
+  transition: 2s;
+}
+
+.mail {
+  color: black;
+}
+
+.mail i {
+  margin-right: 20px;
+}
