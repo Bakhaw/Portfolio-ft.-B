@@ -1,48 +1,108 @@
 /*FONTS*/
 
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
-#flex-panels {
-  display: flex;
-  margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Sacramento');
+body {
+  background-color: #fbf908;
+}
+h2 {
   color: #fff;
   font-size: 60px;
+  padding: 10px 20px;
+}
+
+h2:hover {
+  cursor: pointer;
+}
+
+p {
+  font-size: 40px;
+}
+
+#flex-panels {
+  display: flex;
+  height: 100vh;
+  margin: 0;
   font-family: 'Amatic SC', cursive;
 }
 
-#presentation-box, #skills-box, #projects-box, #search-box, #contact-box {
+#presentation-box, #skills-box, #projects-box, #search-box {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   transition: flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
   overflow: hidden;
   position: relative;
-  height: 100vh;
-  border: 1px solid white;
+  background-size: cover;
+  margin: 25px;
+  border-radius: 30px;
 }
 
 #presentation-box {
-  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(164, 172, 171, 0.6) 0), url(images/nature_1.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(210, 213, 213, 0.2) 0);
   background-size: cover;
+}
+
+.presentation, .skills, .projects {
+  display: none;
+  background-color: rgba(232, 218, 218, 0.54);
+  width: 100%;
+  height: 100%;
+  font-family: 'Sacramento', cursive;
+}
+
+.presentation img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid grey;
+}
+
+.display {
+  display: none;
+}
+
+.title {
+  transition: 2s;
+}
+
+.title:hover {
+  transform: rotateX(360deg);
+  transition: 2s;
 }
 
 #skills-box {
-  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(227, 0, 48, 0.60) 0), url(images/nature_2.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(210, 213, 213, 0.4) 0);
   background-size: cover;
+  background-position: top;
+}
+
+.skills h3 {
+  padding: 20px;
+  font-size: 45px;
+  color: #fff;
+}
+
+.categorie {
+  margin: 20px;
+}
+
+.outils {
+  margin-bottom: 40px;
+}
+
+.colored {
+  font-size: 4em;
+  padding: 10px
 }
 
 #projects-box {
-  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(155, 242, 12, 0.60) 0), url(images/nature_3.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(210, 213, 213, 0.7) 0);
   background-size: cover;
 }
 
 #search-box {
-  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(215, 12, 213, 0.60) 0), url(images/nature_4.jpg);
-  background-size: cover;
-}
-
-#contact-box {
-  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(163, 251, 93, 0.6) 0), url(images/nature_5.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(210, 213, 213, 0.9) 0);
   background-size: cover;
 }
 
@@ -57,7 +117,7 @@ footer h1 {
 }
 
 footer {
-  padding: 40px;
+  padding: 3px;
   background-color: rgba(249, 247, 240, 0.40);
   background-color: white;
   font-size: 25px;

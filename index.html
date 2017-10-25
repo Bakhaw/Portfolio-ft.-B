@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- devicons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <!-- font awesome -->
   <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
   <!-- bootstrap -->
@@ -16,29 +18,8 @@
 
 <body>
 
-  <!-- flex panels -->
-  <!-- Three Boxes -->
-  <div id="flex-panels">
-    <div id="presentation-box" style="flex: 1 1 0%;">
-      <p>Présentation</p>
-    </div>
-    <div id="skills-box" style="flex: 1 1 0%;">
-      <p>Compétences</p>
-    </div>
-    <div id="projects-box" style="flex: 1 1 0%;">
-      <p>Projets réalisés</p>
-    </div>
-    <div id="search-box" style="flex: 1 1 0%;">
-      <p>Ma recherche</p>
-    </div>
-    <div id="contact-box" style="flex: 1 1 0%;">
-      <p>Contactez moi</p>
-    </div>
-  </div>
-
   <!-- footer -->
-  <!-- <footer class="container-fluid align-items-center text-center">
-    <h1>Contactez-moi</h1>
+  <footer class="container-fluid align-items-center text-center">
     <ul class="list-inline col-md-12 socials">
       <li class="list-inline-item col-md-2">
         <a href="https://www.linkedin.com/in/faissal-hattou-9868b5144/" target="_blank">
@@ -56,7 +37,83 @@
       </a>
       </li>
     </ul>
-  </footer> -->
+  </footer>
+
+  <!-- flex panels -->
+  <div id="flex-panels">
+
+    <!-- PRESENTATION -->
+    <div id="presentation-box" style="flex: 1 1 0%;">
+      <h2 class="title">Présentation</h2>
+      <div class="presentation">
+        <img src="images/me.jpg" alt="me">
+        <p>Bienvenue,</p>
+        <p>je suis Faïssal Hattou</p>
+        <p>je vis et travaille sur Paris et en Ile-de-France</p>
+        <p> et je suis étudiant à Simplon.co, en formation "Fullstack JS".</p>
+        <a href="index.html" style="color: grey">
+          <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+  <!-- SKILLS -->
+    <div id="skills-box" style="flex: 1 1 0%;">
+      <h2 class="title">Compétences</h2>
+      <div class="skills">
+        <h3>Langages travaillés à Simplon.co</h3>
+        <div class="categorie">
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-css3-plain-wordmark colored"></i>
+          <i class="devicon-bootstrap-plain-wordmark colored"></i>
+        </div>
+
+        <div class="categorie">
+          <i class="devicon-javascript-plain colored"></i>
+          <i class="devicon-mongodb-plain-wordmark colored"></i>
+          <i class="devicon-express-original-wordmark colored"></i>
+          <i class="devicon-react-original-wordmark colored"></i>
+          <i class="devicon-nodejs-plain-wordmark colored"></i>
+        </div>
+
+        <div class="categorie">
+          <i class="devicon-jquery-plain-wordmark colored"></i>
+          <i class="devicon-jasmine-plain-wordmark colored"></i>
+          <i class="devicon-sass-original colored"></i>
+          <i class="devicon-mocha-plain colored"></i>
+        </div>
+
+        <div class="outils">
+          <h3>Outils de travail</h3>
+          <i class="devicon-github-plain-wordmark colored"></i>
+          <i class="devicon-git-plain-wordmark colored"></i>
+          <i class="devicon-slack-plain-wordmark colored"></i>
+          <i class="devicon-trello-plain-wordmark colored"></i>
+        </div>
+
+        <a href="index.html" style="color: grey">
+          <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects-box" style="flex: 1 1 0%;">
+      <h2 class="title">Projets réalisés</h2>
+      <div class="projects">
+        <h1>test</h1>
+      </div>
+    </div>
+
+    <!-- SEARCH -->
+    <div id="search-box" style="flex: 1 1 0%;">
+      <h2 class="title">Ma recherche</h2>
+    </div>
+
+  </div>
+
+  <!-- jquery -->
+  <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 
   <!-- js for bootstrap -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
